@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences | WEGO 7641</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        /* unique Experiences styles */
+        .hero-exp {
+            height: 60vh;
+            background: linear-gradient(135deg, #0b5e8a 0%, #6bb5d9 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-exp h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .hero-exp p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 1rem auto 0;
+            opacity: 0.9;
+        }
+
+        .experiences-section {
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1e4a76;
+            display: inline-block;
+            border-bottom: 3px solid #168ed3;
+            padding-bottom: 8px;
+        }
+
+        .grid-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .exp-card {
+            background: white;
+            border-radius: 2rem;
+            overflow: hidden;
+            width: 350px;
+            box-shadow: 0 20px 35px -15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .exp-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .exp-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: #cfe3f0;
+        }
+
+        .exp-card-content {
+            padding: 1.5rem;
+        }
+
+        .exp-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0b5e8a;
+        }
+
+        .exp-card p {
+            color: #3a6b8c;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e3f0fa;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #168ed3;
+        }
+
+        .cta-banner {
+            background: linear-gradient(90deg, #168ed3, #6bb5d9);
+            text-align: center;
+            padding: 3rem;
+            color: white;
+            border-radius: 3rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+        }
+
+        .cta-banner h3 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .btn-cta {
+            background: white;
+            color: #168ed3;
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 880px) {
+            .hero-exp h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">WEGO 7641</div>
+        <div class="mobile-toggle" onclick="toggleMenu()"><i class="ph ph-list" id="menuIcon"></i></div>
+        <nav class="nav-links" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destination.html">Destinations</a>
+            <a href="experiences.html" class="active">EXPERIENCES</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <!-- login-wrapper removed -->
+    </header>
+
+    <section class="hero-exp">
+        <div>
+            <h1>Unforgettable <br>Experiences</h1>
+            <p>Beyond sightseeing — dive into culture, adventure, and local life.</p>
+        </div>
+    </section>
+
+    <section class="experiences-section">
+        <div class="section-title">
+            <h2>What will you discover?</h2>
+        </div>
+        <div class="grid-cards">
+            <div class="exp-card">
+                <img src="./assets/images/pexels-kim-villanueva-1028870460-20410471 (1).jpg" alt="Cultural workshop">
+                <div class="exp-card-content">
+                    <span class="tag">Culture</span>
+                    <h3>Heritage & Traditions</h3>
+                    <p>Learn weaving from Ifugao elders, join a fiesta, or try traditional cooking classes.</p>
+                </div>
+            </div>
+            <div class="exp-card">
+                <img src="./assets/images/pexels-alessandro-totaro-542771173-31340330.jpg" alt="Island hopping">
+                <div class="exp-card-content">
+                    <span class="tag">Adventure</span>
+                    <h3>Island Hopping</h3>
+                    <p>Explore hidden lagoons, snorkel with turtles, and chase waterfalls in Palawan.</p>
+                </div>
+            </div>
+            <div class="exp-card">
+                <img src="./assets/images/pexels-elly-mar-tamayor-939226503-35482846.jpg" alt="Food tour">
+                <div class="exp-card-content">
+                    <span class="tag">Flavors</span>
+                    <h3>Taste the Islands</h3>
+                    <p>Street food tours, lechon feasts, and the best halo-halo in town.</p>
+                </div>
+            </div>
+            <div class="exp-card">
+                <img src="./assets/images/pexels-ian-panelo-10722395.jpg" alt="Sunset sailing">
+                <div class="exp-card-content">
+                    <span class="tag">Romance</span>
+                    <h3>Sunset Cruises</h3>
+                    <p>Sail into the golden hour with a private paraw or a group catamaran.</p>
+                </div>
+            </div>
+            <div class="exp-card">
+                <img src="./assets/images/pexels-juju-abella-290428912-13172522.jpg" alt="Hiking">
+                <div class="exp-card-content">
+                    <span class="tag">Active</span>
+                    <h3>Mountain Treks</h3>
+                    <p>Conquer Mt. Pulag, see the sea of clouds, and camp under stars.</p>
+                </div>
+            </div>
+            <div class="exp-card">
+                <img src="./assets/images/pexels-pixabay-237241.jpg" alt="Wellness">
+                <div class="exp-card-content">
+                    <span class="tag">Wellness</span>
+                    <h3>Beach Yoga & Spa</h3>
+                    <p>Reconnect with nature through sunrise yoga and traditional hilot massage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-banner">
+        <h3>Ready to create your story?</h3>
+        <p>Let us help you build the perfect itinerary — from hidden gems to must‑see spots.</p>
+        <a href="#" class="btn-cta">Start planning →</a>
+    </div>
+
+    <section class="destination-footer">
+        <div class="footer-quote">
+            <i class="fas fa-quote-left"></i> Every island has a heartbeat. Let the road take you there. <i
+                class="fas fa-quote-right"></i>
+        </div>
+        <div style="margin-top: 1.5rem; font-size: 0.8rem; color: #2c6280;">WEGO7641 · Real adventures</div>
+    </section>
+
+    <script>
+        // Mobile menu toggle only
+        const navMenu = document.getElementById('navMenu');
+        const menuIcon = document.getElementById('menuIcon');
+        function toggleMenu() {
+            navMenu.classList.toggle('mobile-active');
+            menuIcon.className = navMenu.classList.contains('mobile-active') ? "ph ph-x" : "ph ph-list";
+        }
+    </script>
+</body>
+
+</html>

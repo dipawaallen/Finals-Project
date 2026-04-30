@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>About | WEGO 7641</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        /* unique About page styles */
+        .hero {
+            background: linear-gradient(135deg, #0f6b9e 0%, #2b9fd6 100%);
+            padding: 7rem 2rem 6rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #e2edf2;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0f5c85;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            border-bottom: 3px solid #2b9fd6;
+            padding-bottom: 8px;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 260px;
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(43, 159, 214, 0.2);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #2b9fd6;
+            margin-bottom: 1rem;
+        }
+
+        .mission-quote {
+            background: linear-gradient(120deg, #e1f0f8, #ffffff);
+            padding: 2rem;
+            border-radius: 2rem;
+            margin-top: 1rem;
+            border-left: 5px solid #2b9fd6;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                padding: 7rem 1rem 4rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .feature-grid {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">WEGO 7641</div>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list" id="menuIcon"></i>
+        </div>
+        <nav class="nav-links" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="destination.html">Destinations</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>WEGO 7641</h1>
+        <p>Discover the heartbeat of the Philippines — from pristine beaches to mountain mist, every island tells a
+            story.</p>
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2 class="section-title">ABOUT WEGO 7641</h2>
+            <div class="section-content">
+                <p>Wego 7641 is a tourism website that highlights the beauty and diversity of the Philippines. It helps
+                    travelers discover popular destinations, natural attractions, and cultural landmarks across the
+                    country. From the white sand beaches of Boracay to the breathtaking islands of Palawan, the site
+                    showcases places that make the Philippines a great destination to explore. Whether you are planning
+                    a trip or simply looking for inspiration, Wego 7641 helps you learn more about the country's amazing
+                    travel spots.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Why Wego 7641</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-archway"></i></div>
+                    <h3>7641 Stories</h3>
+                    <p>The name "7641" represents the number of islands that make up the Philippines. Each island has
+                        its own landscapes, traditions, and attractions waiting to be discovered.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-umbrella-beach"></i></div>
+                    <h3>Endless Wonders</h3>
+                    <p>From the white sand beaches of Boracay to the stunning lagoons of Palawan and the scenic
+                        mountains of Baguio City, the Philippines offers a world of travel experiences.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Inspired Exploration</h3>
+                    <p>Wego 7641 was created to showcase these destinations and inspire people to explore the beauty
+                        found across the islands. Your next adventure starts here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="mission-quote">
+                <i class="fas fa-quote-left" style="color:#2b9fd6; margin-right: 8px;"></i>
+                <p style="font-size: 1.05rem;">Our mission is to inspire people to explore the Philippines and
+                    appreciate its natural beauty, rich culture, and unique destinations across the islands. Through
+                    Wego 7641, we aim to highlight some of the country's most breathtaking places, from tropical beaches
+                    to mountain landscapes. We want travelers to discover new destinations, experience Filipino
+                    hospitality, and learn more about the culture, food, and traditions that make the Philippines
+                    special.</p>
+            </div>
+        </section>
+    </div>
+
+    <section class="destination-footer">
+        <div class="footer-quote">
+            <i class="fas fa-quote-left"></i> Every island has a heartbeat. Let the road take you there. <i
+                class="fas fa-quote-right"></i>
+        </div>
+        <div style="margin-top: 1.5rem; font-size: 0.8rem; color: #2c6280;">WEGO7641 · Real adventures</div>
+    </section>
+
+    <script>
+        // Mobile menu toggle only (no modal code)
+        const navMenu = document.getElementById('navMenu');
+        const menuIcon = document.getElementById('menuIcon');
+        function toggleMenu() {
+            navMenu.classList.toggle('mobile-active');
+            menuIcon.className = navMenu.classList.contains('mobile-active') ? "ph ph-x" : "ph ph-list";
+        }
+    </script>
+</body>
+
+</html>
